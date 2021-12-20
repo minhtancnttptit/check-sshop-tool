@@ -5,6 +5,8 @@ import { API_CART_PRODUCTS, CART, PAY_PAGE, WISH_LIST, _ } from './constant';
 import { delay } from "./helpers";
 import { Context } from "telegraf";
 
+const iPhone = puppeteer.devices['iPhone 6'];
+
 type TItem = {
   code: string,
   name?: string,
@@ -60,12 +62,12 @@ class BrowserManager  {
 
   constructor(data: string, id: number) {
     this.id = id;
-    puppeteer.launch({ headless: this.headless, args: ['--window-size=1200,800'] }).then(async (res) => {
+    puppeteer.launch({ headless: this.headless, args: ['--window-size=375,667'] }).then(async (res) => {
       this.browser = res;
       this.page0 = (await this.browser.pages())[0];
       this.browser.newPage().then(res => this.page1 = res);
       this.browser.newPage().then(res => this.page2 = res);
-      this.page1?.setViewport({ width: 1200, height: 800 })
+      this.page1?.setViewport({ width: 375, height: 667 })
     });
     this.checking = false;
   }
@@ -100,6 +102,7 @@ class BrowserManager  {
   async login() {
     const page = this.page0;
     if (!page) return;
+    await page.emulate(iPhone);
     try {
       await page.goto(_.URL);
       await page.type(_._verifyInput, this.code);
@@ -128,6 +131,7 @@ class BrowserManager  {
   async addAll() {
     const page = await this.browser?.newPage();
     if (!page) return;
+    await page.emulate(iPhone);
     // await page.setRequestInterception(true);
     try {
       // page.on('request', (request) => {
@@ -151,6 +155,7 @@ class BrowserManager  {
   async removeAllItemInCart() {
     const page = await this.browser?.newPage();
     if (!page) return;
+    await page.emulate(iPhone);
     try {
       // await page.setRequestInterception(true);
       // page.on('request', (request) => {
@@ -179,6 +184,7 @@ class BrowserManager  {
       let errItems: string[] | undefined = undefined;
       let items: TItem[] | undefined = undefined;
       if (!page) throw new Error('Page da dong.');
+      await page.emulate(iPhone);
       // await page.setRequestInterception(true);
       // page.on('request', async (request) => {
       //     if (['image', 'font', 'stylesheet'].indexOf(request.resourceType()) !== -1) {
@@ -308,13 +314,6 @@ class BrowserManager  {
     this.scheduTask1?.destroy();
     this.scheduTask2?.destroy();
     await this.browser?.close();
-  }
-
-  async snap1() {
-    return await this.page1?.screenshot({ path: 'data/snap1.png', fullPage: true });
-  }
-  async snap2() {
-    return await this.page1?.screenshot({ path: 'data/snap2.png', fullPage: true });
   }
 }
 
