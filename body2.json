@@ -1,0 +1,364 @@
+{
+  "$error":{
+     
+  },
+  "$name":"stepCustomerDetailsForm",
+  "$dirty":true,
+  "$pristine":false,
+  "$valid":true,
+  "$invalid":false,
+  "$submitted":true,
+  "CHECKOUT_SHIPPING_ADDRESS":{
+     "$error":{
+        
+     },
+     "$name":"CHECKOUT_SHIPPING_ADDRESS",
+     "$dirty":true,
+     "$pristine":false,
+     "$valid":true,
+     "$invalid":false,
+     "$submitted":true,
+     "savedAddressOption":true,
+     "newAddressOption":false,
+     "addressId":"9301432270871",
+     "CHECKOUT_SHIPPING_ADDRESS_shipping-saved":{
+        "$viewValue":false,
+        "$modelValue":false,
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           
+        ],
+        "$formatters":[
+           
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":true,
+        "$touched":false,
+        "$pristine":true,
+        "$dirty":false,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"CHECKOUT_SHIPPING_ADDRESS_shipping-saved",
+        "$options":{
+           
+        }
+     },
+     "CHECKOUT_SHIPPING_ADDRESS_addressId":{
+        "$viewValue":"9301432270871",
+        "$modelValue":"9301432270871",
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           
+        ],
+        "$formatters":[
+           
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":true,
+        "$touched":false,
+        "$pristine":true,
+        "$dirty":false,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"CHECKOUT_SHIPPING_ADDRESS_addressId",
+        "$options":{
+           
+        }
+     },
+     "district_disabled":true,
+     "ward_disabled":true,
+     "addressSelection":"s_New",
+     "ward":"",
+     "ward_items":{
+        
+     },
+     "businessAddress":false
+  },
+  "CHECKOUT_DELIVERY_MODES_FORM":{
+     "$error":{
+        
+     },
+     "$name":"CHECKOUT_DELIVERY_MODES_FORM",
+     "$dirty":false,
+     "$pristine":true,
+     "$valid":true,
+     "$invalid":false,
+     "$submitted":true,
+     "deliveryDate":null,
+     "delivery-mode-code-0":{
+        "$viewValue":"vn-im-parcel-express_0",
+        "$modelValue":"vn-im-parcel-express_0",
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           
+        ],
+        "$formatters":[
+           
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":true,
+        "$touched":false,
+        "$pristine":true,
+        "$dirty":false,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"delivery-mode-code-0",
+        "$options":{
+           
+        }
+     }
+  },
+  "CHECKOUT_BILLING_ADDRESS":{
+     "$error":{
+        
+     },
+     "$name":"CHECKOUT_BILLING_ADDRESS",
+     "$dirty":true,
+     "$pristine":false,
+     "$valid":true,
+     "$invalid":false,
+     "$submitted":true,
+     "savedAddressOption":true,
+     "newAddressOption":false,
+     "CHECKOUT_BILLING_ADDRESS_sameAsShipping":{
+        "$viewValue":true,
+        "$modelValue":true,
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           null
+        ],
+        "$formatters":[
+           null
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":true,
+        "$touched":false,
+        "$pristine":true,
+        "$dirty":false,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"CHECKOUT_BILLING_ADDRESS_sameAsShipping",
+        "$options":{
+           
+        }
+     },
+     "sameAsShipping":true,
+     "addressId":"9301432303639",
+     "district_disabled":true,
+     "ward_disabled":true,
+     "addressSelection":"b_New",
+     "ward":"",
+     "ward_items":{
+        
+     }
+  },
+  "CHECKOUT_OPTIONS":{
+     "$error":{
+        
+     },
+     "$name":"CHECKOUT_OPTIONS",
+     "$dirty":true,
+     "$pristine":false,
+     "$valid":true,
+     "$invalid":false,
+     "$submitted":true,
+     "CHECKOUT_OPTIONS_marketingOptIn":{
+        "$viewValue":true,
+        "$modelValue":true,
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           null
+        ],
+        "$formatters":[
+           null
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":true,
+        "$touched":false,
+        "$pristine":true,
+        "$dirty":false,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"CHECKOUT_OPTIONS_marketingOptIn",
+        "$options":{
+           
+        }
+     },
+     "CHECKOUT_OPTIONS_termsAndCondition":{
+        "$viewValue":true,
+        "$modelValue":true,
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           null
+        ],
+        "$formatters":[
+           null
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":false,
+        "$touched":true,
+        "$pristine":false,
+        "$dirty":true,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"CHECKOUT_OPTIONS_termsAndCondition",
+        "$options":{
+           
+        }
+     },
+     "CHECKOUT_OPTIONS_disclaimerText":{
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           
+        ],
+        "$formatters":[
+           
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":true,
+        "$touched":false,
+        "$pristine":true,
+        "$dirty":false,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"CHECKOUT_OPTIONS_disclaimerText",
+        "$options":{
+           
+        }
+     },
+     "CHECKOUT_OPTIONS_disclaimerText2":{
+        "$validators":{
+           
+        },
+        "$asyncValidators":{
+           
+        },
+        "$parsers":[
+           
+        ],
+        "$formatters":[
+           
+        ],
+        "$viewChangeListeners":[
+           
+        ],
+        "$untouched":true,
+        "$touched":false,
+        "$pristine":true,
+        "$dirty":false,
+        "$valid":true,
+        "$invalid":false,
+        "$error":{
+           
+        },
+        "$name":"CHECKOUT_OPTIONS_disclaimerText2",
+        "$options":{
+           
+        }
+     },
+     "marketingOptIn":true,
+     "termsAndCondition":true
+  },
+  "CHECKOUT_DELIVERY_MODES":[
+     {
+        "orderEntries":[
+           {
+              "entryNumber":0
+           }
+        ],
+        "deliveryModes":[
+           {
+              "code":"vn-im-parcel-express",
+              "deliveryServices":[
+                 
+              ]
+           },
+           {
+              "code":"vn-click-and-collect",
+              "deliveryServices":[
+                 
+              ]
+           }
+        ],
+        "completedOn":null,
+        "deliveryMode":null,
+        "deliveryServices":[
+           
+        ],
+        "selectedDeliveryPointOfService":null,
+        "deliveryIndex":"vn-im-parcel-express_0",
+        "selectedDeliveryCode":"vn-im-parcel-express",
+        "installationDelivery":false
+     }
+  ]
+}
